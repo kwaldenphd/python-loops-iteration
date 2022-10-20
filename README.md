@@ -126,7 +126,7 @@ Another example of iteration in action, this time using a `list`:
 
 ```Python
 # list of string objects
-fruits = ["apple", "banana", "blueberry", "cherry"]
+fruits = ["apple", "banana", "blueberry", "cherry", "pear"]
 
 # return index for cherry
 print("The index for cherry is ", fruits.index("cherry"))
