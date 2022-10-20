@@ -227,46 +227,6 @@ This is an example of a `while` loop. Because the number of times the loop will 
   </tr>
   </table>
   
-Describe event controlled in your own words
-
-Given following code:
-
-```Python
-# assign integer variable
-n = 0
-
-# while loop
-while n < 10: # initial condition
- print(n) # print statement
- n = n +1 # reassign value of n
-```
-
-<blockquote>Q13: What is the value of <code>n</code> in the first iteration of the loop? What happens to the value of <code>n</code> in each iteration of the loop?</blockquote>
-
-<blockquote>Q14: What is the endpoint for this loop, or when will this loop end?</blockquote>
-
-Given following code
-
-```Python
-# assign x variable
-x = 10
-
-# looping structure using greater than or equal to conditional statement
-while x >= 0: # initial condition
- print(x) # print statement
- x = x-1 # reassign x
-
-# message to print once loop has completed
-print("I'm done!")
-```
-
-<blockquote>Q15: Now it's your turn. Describe what is happening in each line of this program. You can use the explanations for the previous example as a model.</blockquote>
-
-<blockquote>Q16: What is the value of <code>x</code> in the first iteration of the loop? What happens to the value of <code>x</code> in each iteration of the loop?</blockquote>
-
-<blockquote>Q17: What is the endpoint for this loop, or when will this loop end?</blockquote>
-
-
 #### `While` Loop Application
 
 Q1: Given the following program:
@@ -419,29 +379,6 @@ for value in states.values():
   <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSePIOvFVTaQLTUh_xDFByNVUvvqY64sBt2NHpR17hXhF0S8Eg/viewform?usp=sf_link">Python For Loops Comprehension Check</a></td>
   </tr>
   </table>
-
-Describe count-controlled in your own words
-
-Given this code:
-
-```Python
-characters = ['Arya', ' Benjen', 'Bran', 'Catelyn', 'Eddard', 'Rickon', 'Robb', 'Sansa']
-
-print('Members of the House Stark:')
-
-for character in characters:
- 	print(character.title() + " Stark")
-
-print(characters[0].title() + " is my favorite.")
-```
-
-What's happening in each line of the program
-
-What would the output look like
-
-How many iterations
-
-When does the loop end
 
 #### `For` Loop Application
 
@@ -626,16 +563,6 @@ For more on `break` and `continue`:
   <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdQCHB6tauQplugunNCqJrVJiZ0W-WqAHAizAft_izi_8X_1g/viewform?usp=sf_link">Additional Python Loop Considerations Comprehension Check</a></td>
   </tr>
   </table>
-
-Correct syntax for range- what does range do/work, given X code, what would we expect
-
-What enumerate does- how it works, given X code, what would we expect
-
-Describe infinite loop in your own words
-
-Break, continue- describe in your own words
-
-Given following code (that includes break, continue), what's going on
 
 # Putting It All Together
 
