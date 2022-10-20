@@ -250,7 +250,7 @@ How would you modify the program to print or output the string nine (9) times an
 
 For example, your output might look like the following: 
 
-```Python
+```
 1 Python
 2 Python
 3 Python
@@ -403,7 +403,7 @@ print ("Done")
 
 As a reminder, your output might look like the following: 
 
-```Python
+```
 1 Python
 2 Python
 3 Python
@@ -587,7 +587,7 @@ Q6: Write a loop that prints out all numbers from 0 to 10. Answer to this questi
 Q7: Write a program that prints a list of the first nine positive integers and their squares. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
 
 Your output should look similar to the following:
-```Python
+```
 Number Square
 1        1
 2        4
@@ -603,7 +603,7 @@ Number Square
 Q8: Write a program that counts from 10 down to 1, and then prints "Blastoff!" Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
 
 Your output should similar to the following:
-```Python
+```
 10
 9
 8
@@ -619,7 +619,7 @@ Blastoff!
 
 Q9: Write a program that asks the user to enter three numbers: a starting value, an ending value, and an increment. Your program should then "count" based on these criteria, as shown in the sample output below. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
 
-```Python
+```
 This program counts for you.
 Enter the starting value: 3
 Enter the ending value: 13
@@ -691,7 +691,7 @@ How would you modify the program to print or output the string nine (9) times an
 
 For example, your output might look like the following: 
 
-```Python
+```
 1 Python
 2 Python
 3 Python
@@ -721,7 +721,7 @@ print ("Done")
 
 As a reminder, your output might look like the following: 
 
-```Python
+```
 1 Python
 2 Python
 3 Python
@@ -775,7 +775,7 @@ Q6: Write a loop that prints out all numbers from 0 to 10. Answer to this questi
 Q7: Write a program that prints a list of the first nine positive integers and their squares. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
 
 Your output should look similar to the following:
-```Python
+```
 Number Square
 1        1
 2        4
@@ -791,7 +791,7 @@ Number Square
 Q8: Write a program that counts from 10 down to 1, and then prints "Blastoff!" Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
 
 Your output should similar to the following:
-```Python
+```
 10
 9
 8
@@ -807,7 +807,7 @@ Blastoff!
 
 Q9: Write a program that asks the user to enter three numbers: a starting value, an ending value, and an increment. Your program should then "count" based on these criteria, as shown in the sample output below. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
 
-```Python
+```
 This program counts for you.
 Enter the starting value: 3
 Enter the ending value: 13
