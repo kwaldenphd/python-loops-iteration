@@ -29,6 +29,17 @@ Definitions and explanations in this lab are adapted from Kenneth Leroy Busbee a
 - [Key Concepts](#key-concepts)
 - [Lab Notebook Template](#lab-notebook-template)
 - [Overview](#overview)
+  * [Iteration Control Structures](#iteration-control-structures)
+  * [Iteration in Python](#iteration-in-python)
+- [Loops](#loops)
+  * [Event-Controlled Loops](#event-controlled-loops)
+  * [Count-Controlled Loops](#count-controlled-loops)
+- [Additional Considerations](#additional-considerations)
+  * [`range()`](#range)
+  * [`enumerate()`](#enumerate)
+  * [Infinite Loops](#infinite-loops)
+  * [Break & Continue](#break--continue)
+- [Putting It All Together](#putting-it-all-together)
 - [How to Submit This Lab (and show your work)](#how-to-submit-this-lab-and-show-your-work)
 - [Lab Notebook Questions](#lab-notebook-questions)
 
@@ -59,15 +70,15 @@ What gets submitted as the lab notebook is the `Lab_Notebook_Walden.py` file.
 
 # Overview
 
+By this point, we've spent multiple labs thinking through control structures and control flow, with a focus on how we use them in Python.
+
 From Busbee and Braunschweig's "[Structured Programming](https://press.rebus.community/programmingfundamentals/chapter/structured-programming/)," in *Programming Fundamentals*:
     
 "One of the most important concepts of programming is the ability to control a program so that different lines of code are executed or that some lines of code are executed many times. The mechanisms that allow us to control the flow of execution are called control structures. Flowcharting is a method of documenting (charting) the flow (or paths) that a program would execute. There are three main categories of control structures:"
   * Sequence [executes in given sequence]
   * Selection [selects between two or more flows using condition or question]
   * Iteration [repeats same piece of code multiple times]
-  
-By this point, we've spent multiple laabs thinking through control structures and control flow, with a focus on how we use them in Python.
-    
+
 Examples of control structures in Python include:
 - `if-then-else` (syntax: `if`, `else`, `elif`)
 - `while` statements (syntax: `while`)
@@ -77,6 +88,8 @@ We've also previously been introduced to the concept of **code blocks**. From Bu
 - "A code block, sometimes referred to as a compound statement, is a lexical structure of source code which is grouped together. Blocks consist of one or more declarations and statements. A programming language that permits the creation of blocks, including blocks nested within other blocks, is called a block-structured programming language. Blocks are fundamental to structured programming, where control structures are formed from blocks."
 
 ## Iteration Control Structures
+
+<p align="center"><img src="https://github.com/kwaldenphd/python-loops-iteration/blob/main/images/for-loop-meme.png?raw=true" width="500"></p>
 
 From Busbee and Braunschweig's "[Iteration Control Structures](https://press.rebus.community/programmingfundamentals/chapter/iteration-control-structures/)," in *Programming Fundamentals*:
 
@@ -146,6 +159,8 @@ Breaking down that definition:
 
 The power of iteration as a control structure comes from a programming concept called `loops`.
 
+<p align="center"><img src="https://github.com/kwaldenphd/python-loops-iteration/blob/main/images/loop-comparison-diagram.png?raw=true" width="1000"></p>
+
 Most high-level programming languages support two main types of loops: event-controlled and count-controlled
 - **Event-controlled loops** test for an initial condition, and execution continues as long as the initial condition is `True`. How many times the loop will execute *is not known*.
 - **Count-controlled loops** (sometimes called counter-controlled loops) continue executing for a pre-determined number of times. The number of times the loop will execute is known because the loop is iterating through a collection of objects/values (i.e. a string or list), or the iteration when the initial condition will no longer be `True` is known.
@@ -153,6 +168,8 @@ Most high-level programming languages support two main types of loops: event-con
 Let's break down each type.
 
 ### Event-Controlled Loops
+
+<p align="center"><img src="https://github.com/kwaldenphd/python-loops-iteration/blob/main/images/while-loop-diagram.png?raw=true" width="500"></p>
 
 In Python, event-controlled loops are written using a `while` statement and are called `while loop`. A `while` statement tests for an initial condition, and the lines of code indented under `while` run only when the initial condition is `True`.
 
@@ -201,7 +218,7 @@ print("Congrats, you guessed the secret number!")
 
 This is an example of a `while` loop. Because the number of times the loop will execute is not known, this is an example of an event-controlled loop. That is, the loop will continue executing (looping) until the initial condition (`guess != secret`) is no longer true.
 
-### `While` Loop Comprehension Check
+#### `While` Loop Comprehension Check
 
 <table>
  <tr><td>
@@ -213,7 +230,6 @@ This is an example of a `while` loop. Because the number of times the loop will 
 Describe event controlled in your own words
 
 Given following code:
-
 
 ```Python
 # assign integer variable
@@ -251,32 +267,26 @@ print("I'm done!")
 <blockquote>Q17: What is the endpoint for this loop, or when will this loop end?</blockquote>
 
 
-### `While` Loop Application
+#### `While` Loop Application
 
-- Take guessing game from conditional execution
-- Other programs from that lab that might connect?
-
+Q1: Given the following program:
 
 ```Python
 # assign count variable
-
 count = 1
 
 # while loop
 while count <= 5: # initial condition
-   print ("Notre") # first print statement
-   print ("Dame") # second print statement
+   print ("Python") # print statement
    count = count + 1 # reassign count
 
 # final print statement
 print ("Done")
 ```
 
-What happens if you remove count = count + 1 from the loop
+How would you modify the program to print or output the string nine (9) times and also include line numbers as part of the output? Answer to this question includes program + comments that document process and explain your code.
 
-How would you modify to print something out 9 times and print out line number
-
-148. For example, your output might look like the following: 
+For example, your output might look like the following: 
 
 ```Python
 1 Python
@@ -291,73 +301,9 @@ How would you modify to print something out 9 times and print out line number
 IS FUN!
 ```
 
-Q28: Write a program that prints a list of the first nine positive integers and their squares. Include code + comments.
+### Count-Controlled Loops in Python
 
-Your output should look similar to the following:
-```Python
-Number Square
-1        1
-2        4
-3        9
-4        16
-5        25
-6        36
-7        49
-8        64
-9        81
-```
-
-Q29: Write a program that counts from 10 down to 1, and then prints "Blastoff!" 
-
-Your output should similar to the following:
-```Python
-10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-Blastoff!
-```
-
-Q30: Write a program that asks the user to enter three numbers: a starting value, an ending value, and an increment. Your program should then "count" based on these criteria, as shown in the sample output below. Include code + comments.
-
-```Python
-This program counts for you.
-Enter the starting value: 3
-Enter the ending value: 13
-Enter the increment: 2
-3
-5
-7
-9
-11
-13
-```
-
-Q31: Write a program that uses a while-loop to print the output shown below. Include code + comments.
-```Python
-1
-2
-3
-4
-5
-6
-7
-happy
-8
-9
-10
-```
-
-The program should print the numbers 1 through 10, except that between 7 and 8 it should print the word "happy". This can be accomplished by placing an `if` statement within the `while` loop to do something special for the `lineNumber == 7` case.
-
-
-## Count-Controlled Loops in Python
+<p align="center"><img src="https://github.com/kwaldenphd/python-loops-iteration/blob/main/images/for-loop-diagram.png?raw=true" width="500"></p>
 
 In Python, count-controlled loops are written using a `for` statement and are called `for loop`. A `for loop` iterates over each value in a group of values- the lines of code nested under the initial statement run for each iteration.
 
@@ -465,7 +411,7 @@ for value in states.values():
   print(value)
 ```
 
-## `For` Loop Comprehension Check
+#### `For` Loop Comprehension Check
 
 <table>
  <tr><td>
@@ -497,116 +443,98 @@ How many iterations
 
 When does the loop end
 
-## `For` Loop Application
+#### `For` Loop Application
 
-Modify the turquoise string matching program to return all repeat values, not just the first 
-
-DATA STRUCTURES LAB Q3: Modify the program provided below to search for the character q or u in the string. Does it always return the index number you expect? What index is returned if you ask for the index of the letter u (i.e., what happens when the desired character appears more than once in the string)?
-
-DATA STRUCTURES LAB Q6- return to the nested list and use a for loop if you didn't before
-
-Q27: Convert the following Python code to use a while loop instead of a for loop. Include your modified code with comments.
+Q2: Let's return to the program we modified for Q1. How would you modify your Q1 answer to use a `for` loop instead of a `while` loop? Answer to this question includes program + comments that document process and explain your code.
 
 ```Python
-numbers = [5, 4, 7, 0, 1]
-count   = 0
+# assign count variable
+count = 1
 
-for number in numbers:
-  if count in numbers:
-    print(count)
-    count += 1
-  else:
-    break
+# while loop
+while count <= 5: # initial condition
+   print ("Python") # print statement
+   count = count + 1 # reassign count
 
-print(count)
+# final print statement
+print ("Done")
 ```
 
-Q28: Write a program that prints a list of the first nine positive integers and their squares. Include code + comments.
-
-Your output should look similar to the following:
-```Python
-Number Square
-1        1
-2        4
-3        9
-4        16
-5        25
-6        36
-7        49
-8        64
-9        81
-```
-
-Q29: Write a program that counts from 10 down to 1, and then prints "Blastoff!" 
-
-Your output should similar to the following:
-```Python
-10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-Blastoff!
-```
-
-Q30: Write a program that asks the user to enter three numbers: a starting value, an ending value, and an increment. Your program should then "count" based on these criteria, as shown in the sample output below. Include code + comments.
+As a reminder, your output might look like the following: 
 
 ```Python
-This program counts for you.
-Enter the starting value: 3
-Enter the ending value: 13
-Enter the increment: 2
-3
-5
-7
-9
-11
-13
+1 Python
+2 Python
+3 Python
+4 Python
+5 Python 
+6 Python
+7 Python
+8 Python
+9 Python
+IS FUN!
 ```
 
-Q31: Write a program that uses a for-loop to print the output shown below. Include code + comments.
+Q3: In a previous lab, you were asked to modify the program below to search for the characters `q` and `u` in the string `turquoise`. 
+
+Program you modified:
 ```Python
-1
-2
-3
-4
-5
-6
-7
-happy
-8
-9
-10
+# assign string variable
+color = "turquoise"
+
+# get index number of t character
+index_number = color.index("t")
+
+# show index number as part of print statement
+print ("The index number for the letter t within the word " + color + " is " + index_number)
 ```
 
-The program should print the numbers 1 through 10, except that between 7 and 8 it should print the word "happy". This can be accomplished by placing an `if` statement within the `while` loop to do something special for the `lineNumber == 7` case.
+Write a program that uses a `for` loop to return all instances of `q` and `u` in the string, not just the first occurrence. Answer to this question includes program + comments that document process and explain your code.
 
-FUNCTIONS LAB Q1- print phrase specific number of times, rewrite using for loop
-
-FUNCTIONS LAB Q2- take input values for both Q1 parameters
-
+Q4: In a previous lab, you were asked to write a function that printed a string a specific number of times. Modify this program to use a `for` loop. Include the function definition as well as a sample function call. Answer to this question includes program + comments that document process and explain your code.
+- NOTE: Modify the version of this program that accepted specific values as inputs (rather than getting inputs as part of the function definition).
 
 # Additional Considerations
 
-Range
+## `range()`
 
-## Enumerate
+Python's `range()` function allows us to generate a list of integer values. The general syntax:
 
-86. In a previous lab, we talked about how each item in a list has an index, or a number that indicates its position in the list.
+```Python
+range(START VALUE, END VALUE, STEP INTERVAL)
+```
 
-87. We can use the `enumerate()` function to generate a list of pairs containing each item in the list and its index.
+The default start value for `range()` is `0`, and the default step interval is `1`.
+
+So for example, `range(6)` would include the values `[0, 1, 2, 3, 4, 5]`. While `range(1, 6, 2)` would include the values `[1, 3, 5]`.
+
+We can use `range()` in combination with `list()` to generate a list of numbers.
+- `list(range(6))` would generate the list `[0, 1, 2, 3, 4, 5]`
+
+We can also use `range()` as part of a `for` loop to iterate over a list of numeric values (without having to create that list manually).
+
+For example: 
+
+```Python
+# for loop that iterates over values in range
+for i in range(0, 3):
+ print(i)
+ ```
+
+For more information on Python's `range()` function: 
+- W3Schools, "[Python Range Function](https://www.w3schools.com/python/ref_func_range.asp)"
+- Python documentation, "[4.3 The range() Function](https://docs.python.org/3/tutorial/controlflow.html#the-range-function)"
+
+## `enumerate()`
+
+In a previous lab, we talked about how each item in a list has an index, or a number that indicates its position in the list. We can use the `enumerate()` function to generate a list of pairs containing each item in the list and its index.
 
 ```Python
 # create list using enumerate
 list(enumerate(['a','b','c'])
 ```
 
-88. We can use the `enumerate()` function as part of a `for` loop.
+We can use the `enumerate()` function as part of a `for` loop.
 
 ```Python
 # for loop that iterates over list index and values
@@ -614,22 +542,38 @@ for index, letter in enumerate('abc'):
  print(index, letter)
 ```
 
-89. In this last example, `for index, letter` instructed Python to iterate over both components in the `enumerate()` output.
+In this last example, `for index, letter` instructed Python to iterate over both components in the `enumerate()` output. `print(index, letter)` instructed Python to print both components for each element.
 
-90. `print(index, letter)` instructed Python to print both components for each element.
-
+For more information on Python's `enumerate()` function: 
+- W3Schools, "[Python Enumerate Function](https://www.w3schools.com/python/ref_func_enumerate.asp)"
+- Python documentation, "[enumerate](https://docs.python.org/3/library/functions.html#enumerate)"
 
 ## Infinite loop
 
 Loops that have no endpoint are called *infinite loops*.
 
+For example, given the following program:
+
+```Python
+# assign count variable
+count = 1
+
+# while loop
+while count <= 5: # initial condition
+   print ("Python") # print statement
+   count = count + 1 # reassign count
+
+# final print statement
+print ("Done")
+```
+
+What would happen if we removed `count = count + 1` from the loop? The value of `count` would never change, the initial condition's truth value (`count <= 5`) would never change (because `count` would always equal `1`), and we would have an infinite loop.
+
 ## Break & Continue
 
-157. We can exit a loop immediately by using the `break` statement.
+We can exit a loop immediately by using the `break` statement. `break` will stop or exit the `while` loop even if the condition is true.
 
-158. `break` will stop the `while` loop even if the condition is true.
-
-159. For example:
+For example:
 
 ```Python
 # assign i variable 
@@ -646,15 +590,11 @@ while i < 6: # initial condition
 	i += 1 # reassign i
 ```
 
-160. In this example, the loop breaks as soon as the `i == 3` condition is `True`.
+In this example, the loop breaks as soon as the `i == 3` condition is `True`.
 
-<blockquote>Q23: Describe what would happen in each iteration of this loop. How many iterations would it take for the <code>break</code> statement to come into effect?</blockquote>
+We can skip the rest of the body of a loop and move on to the next iteration using `continue`. 
 
-#### `continue`
-
-161. We can skip the rest of the body of a loop and move on to the next iteration using `continue`.
-
-162. For example:
+For example:
 
 ```Python
 # assign the i variable
@@ -671,11 +611,12 @@ while i < 6: # initial condition
 	print(i) # print statement
 ```
 
-163. In this example, the current iteration of the loop will stop when `i == 3` is true.
+In this example, the current iteration of the loop will stop when `i == 3` is true. Unlike with `break`, the loop will not end. Instead when `i == 3` is true, the loop will skip over the final nested `print` statement and return to the beginning of the loop for a new iteration.
 
-164. Unlike with `break`, the loop will not end.
-
-165. Instead when `i == 3` is true, the loop will skip over the final nested `print` statement and return to the beginning of the loop for a new iteration.
+For more on `break` and `continue`:
+- W3Schools, "[Python break Keyword](https://www.w3schools.com/python/ref_keyword_break.asp)"
+- W3Schools, "[Python For Break](https://www.w3schools.com/python/gloss_python_for_break.asp)"
+- W3Schools, "[Python Continue For Loop](https://www.w3schools.com/python/gloss_python_for_continue.asp)"
 
 ## Additional Loop Considerations Comprehension Check
 
@@ -708,15 +649,7 @@ Something that has them use break/continue
 
 # Putting It All Together
 
-Guessing game with hall/mascot dictionary
-
-LINGERING OPEN QUESTION- how much to have them write out each loop as while and for VERSUS give them the prompt and let them choose
-
-
-Q26: Write a loop that prints out all numbers from 0 to 10. Include your code + comments that document how the code works.
-
-Q27: Convert the following Python code to use a while loop instead of a for loop. Include your modified code with comments.
-
+Q5: Modify the following program to use a while loop instead of a for loop. Answer to this question includes program + comments that document process and explain your code.
 ```Python
 numbers = [5, 4, 7, 0, 1]
 count   = 0
@@ -731,13 +664,76 @@ for number in numbers:
 print(count)
 ```
 
-Q28: Write a program that prints a list of the first nine positive integers and their squares. Include code + comments.
+NOTE: For the following lab notebook questions, write two programs for each- one that uses a `while` loop and one that uses a `for` loop to accomplish the same task. 
 
-Q29: Write a program that counts from 10 down to 1, and then prints "Blastoff!"
+Q6: Write a loop that prints out all numbers from 0 to 10. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
 
-Q30: Write a program that asks the user to enter three numbers: a starting value, an ending value, and an increment. Your program should then "count" based on these criteria, as shown in the sample output below. Include code + comments.
+Q7: Write a program that prints a list of the first nine positive integers and their squares. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
 
+Your output should look similar to the following:
+```Python
+Number Square
+1        1
+2        4
+3        9
+4        16
+5        25
+6        36
+7        49
+8        64
+9        81
+```
 
+Q8: Write a program that counts from 10 down to 1, and then prints "Blastoff!" Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
+
+Your output should similar to the following:
+```Python
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Blastoff!
+```
+
+Q9: Write a program that asks the user to enter three numbers: a starting value, an ending value, and an increment. Your program should then "count" based on these criteria, as shown in the sample output below. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
+
+```Python
+This program counts for you.
+Enter the starting value: 3
+Enter the ending value: 13
+Enter the increment: 2
+3
+5
+7
+9
+11
+13
+```
+
+Q10: Write a program that prints the numbers 1 through 10, except that between 7 and 8 it should print the word "happy." Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
+
+Sample output for this program:
+```
+1
+2
+3
+4
+5
+6
+7
+happy
+8
+9
+10
+```
+
+HINT: How could an `if` statement be helpful to achieve this output? 
 
 ## How to submit this lab (and show your work)
 
@@ -759,3 +755,170 @@ What gets submitted as the lab notebook is the `Lab_Notebook_Walden.py` file.
 Alternatives:
 - [`.py` template](https://drive.google.com/file/d/1nn0IVlZRSe6oXmhnh5nqNCAKKPQi5t5j/view?usp=sharing) (Google Drive, ND users)
 - [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/1EltssZ7B1PKv8FBQM55yc7AeyDyEi3Ma?usp=sharing) (Google Colab, ND users)
+
+Q1: Given the following program:
+
+```Python
+# assign count variable
+count = 1
+
+# while loop
+while count <= 5: # initial condition
+   print ("Python") # print statement
+   count = count + 1 # reassign count
+
+# final print statement
+print ("Done")
+```
+
+How would you modify the program to print or output the string nine (9) times and also include line numbers as part of the output? Answer to this question includes program + comments that document process and explain your code.
+
+For example, your output might look like the following: 
+
+```Python
+1 Python
+2 Python
+3 Python
+4 Python
+5 Python 
+6 Python
+7 Python
+8 Python
+9 Python
+IS FUN!
+```
+
+Q2: Let's return to the program we modified for Q1. How would you modify your Q1 answer to use a `for` loop instead of a `while` loop? Answer to this question includes program + comments that document process and explain your code.
+
+```Python
+# assign count variable
+count = 1
+
+# while loop
+while count <= 5: # initial condition
+   print ("Python") # print statement
+   count = count + 1 # reassign count
+
+# final print statement
+print ("Done")
+```
+
+As a reminder, your output might look like the following: 
+
+```Python
+1 Python
+2 Python
+3 Python
+4 Python
+5 Python 
+6 Python
+7 Python
+8 Python
+9 Python
+IS FUN!
+```
+
+Q3: In a previous lab, you were asked to modify the program below to search for the characters `q` and `u` in the string `turquoise`. 
+
+Program you modified:
+```Python
+# assign string variable
+color = "turquoise"
+
+# get index number of t character
+index_number = color.index("t")
+
+# show index number as part of print statement
+print ("The index number for the letter t within the word " + color + " is " + index_number)
+```
+
+Write a program that uses a `for` loop to return all instances of `q` and `u` in the string, not just the first occurrence. Answer to this question includes program + comments that document process and explain your code.
+
+Q4: In a previous lab, you were asked to write a function that printed a string a specific number of times. Modify this program to use a `for` loop. Include the function definition as well as a sample function call. Answer to this question includes program + comments that document process and explain your code.
+- NOTE: Modify the version of this program that accepted specific values as inputs (rather than getting inputs as part of the function definition).
+
+Q5: Modify the following program to use a while loop instead of a for loop. Answer to this question includes program + comments that document process and explain your code.
+```Python
+numbers = [5, 4, 7, 0, 1]
+count   = 0
+
+for number in numbers:
+  if count in numbers:
+    print(count)
+    count += 1
+  else:
+    break
+
+print(count)
+```
+
+NOTE: For the following lab notebook questions, write two programs for each- one that uses a `while` loop and one that uses a `for` loop to accomplish the same task. 
+
+Q6: Write a loop that prints out all numbers from 0 to 10. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
+
+Q7: Write a program that prints a list of the first nine positive integers and their squares. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
+
+Your output should look similar to the following:
+```Python
+Number Square
+1        1
+2        4
+3        9
+4        16
+5        25
+6        36
+7        49
+8        64
+9        81
+```
+
+Q8: Write a program that counts from 10 down to 1, and then prints "Blastoff!" Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
+
+Your output should similar to the following:
+```Python
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Blastoff!
+```
+
+Q9: Write a program that asks the user to enter three numbers: a starting value, an ending value, and an increment. Your program should then "count" based on these criteria, as shown in the sample output below. Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
+
+```Python
+This program counts for you.
+Enter the starting value: 3
+Enter the ending value: 13
+Enter the increment: 2
+3
+5
+7
+9
+11
+13
+```
+
+Q10: Write a program that prints the numbers 1 through 10, except that between 7 and 8 it should print the word "happy." Answer to this question includes programs with a `while` loop and a `for` loop + comments that document process and explain your code.
+
+Sample output for this program:
+```
+1
+2
+3
+4
+5
+6
+7
+happy
+8
+9
+10
+```
+
+HINT: How could an `if` statement be helpful to achieve this output? 
