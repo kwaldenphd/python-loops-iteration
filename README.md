@@ -223,7 +223,7 @@ This is an example of a `while` loop. Because the number of times the loop will 
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc6SKZMpaS62tTYi6_gVNnpXNKtpWsFwAMKxCsRoJywyPqERg/viewform?usp=sf_link">Built-in Functions in Python Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSfhrN-wLhsGhxnbEDjBNVkF35Z8p31OIJSDdBfgOtI_KzAlAg/viewform?usp=sf_link">Python While Loops Comprehension Check</a></td>
   </tr>
   </table>
   
@@ -416,7 +416,7 @@ for value in states.values():
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc6SKZMpaS62tTYi6_gVNnpXNKtpWsFwAMKxCsRoJywyPqERg/viewform?usp=sf_link">Built-in Functions in Python Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSePIOvFVTaQLTUh_xDFByNVUvvqY64sBt2NHpR17hXhF0S8Eg/viewform?usp=sf_link">Python For Loops Comprehension Check</a></td>
   </tr>
   </table>
 
@@ -623,7 +623,7 @@ For more on `break` and `continue`:
 <table>
  <tr><td>
 <img src="https://github.com/kwaldenphd/internet/blob/main/images/clipboard.png?raw=true" alt="Clipboard icon" width="50"/></td>
-  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSc6SKZMpaS62tTYi6_gVNnpXNKtpWsFwAMKxCsRoJywyPqERg/viewform?usp=sf_link">Built-in Functions in Python Comprehension Check</a></td>
+  <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdQCHB6tauQplugunNCqJrVJiZ0W-WqAHAizAft_izi_8X_1g/viewform?usp=sf_link">Additional Python Loop Considerations Comprehension Check</a></td>
   </tr>
   </table>
 
@@ -636,16 +636,6 @@ Describe infinite loop in your own words
 Break, continue- describe in your own words
 
 Given following code (that includes break, continue), what's going on
-
-## Additional Loop Considerations Application
-
-Something that has them use range
-
-Something that has them use enumerate
-
-Something that has them identify an infinite loop (move earlier question??, what happens if you remove count something or another)
-
-Something that has them use break/continue
 
 # Putting It All Together
 
