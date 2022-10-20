@@ -1,28 +1,39 @@
 # Key Concepts
 
 Python syntax that shows up in this lab:
-- for loop
-- while loop
-- Break, continue
+- `for` and `while` loops
+- `range()` and `enumerate()` functions
+- `break` and `continue` keywords
 
-Loops
+**`break` & `continue`**
+- DEF
 
-Count Controlled Loops
+**Control Flow, Control Structures**
+- DEF
 
-Event Controlled Loops
+**Count-Controlled Loops**
+- DEF
 
-`for` Loop
+**`enumerate()`**
+- DEF
 
-`while` Loop
+**Event-Controlled Loops**
+- DEF
 
-`Break`
+**`for` Loops**
+- DEF
 
-`Continue`
+**Infinite Loops**
+- DEF
 
-Control Flow
+**Iteration**
+- DEF
 
-Conditional Execution
+**Loops**
+- DEF
 
-Iteration
+**`range()`**
+- DEF
 
-Infinite Loop
+**`while` Loops**
+- DEF
