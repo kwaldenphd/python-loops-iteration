@@ -43,17 +43,19 @@ Definitions and explanations in this lab are adapted from Kenneth Leroy Busbee a
 - [How to Submit This Lab (and show your work)](#how-to-submit-this-lab-and-show-your-work)
 - [Lab Notebook Questions](#lab-notebook-questions)
 
+[Click here](https://colab.research.google.com/drive/1vyAHwOf76_byT1CY8ofFwBg67h3Sljuh?usp=sharing) to access this lab procedure as a Jupyter Notebook (Google CoLab, ND users)
+
 # Key Concepts
 
 [Click here](https://github.com/kwaldenphd/python-loops-iteration/blob/main/key-concepts.md) for a full list of key concepts and definitions from this lab.
 
 # Lab Notebook Template
 
-[Click here](https://replit.com/team/eoc-f22/Functions-in-Python) to make a copy of the Replit template for this lab.
+[Click here](https://replit.com/team/eoc-f22/Iteration-and-Loops-in-Python) to make a copy of the Replit template for this lab.
 
 Alternatives:
-- [`.py` template](https://drive.google.com/file/d/1nn0IVlZRSe6oXmhnh5nqNCAKKPQi5t5j/view?usp=sharing) (Google Drive, ND users)
-- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/1EltssZ7B1PKv8FBQM55yc7AeyDyEi3Ma?usp=sharing) (Google Colab, ND users)
+- [`.py` template](https://drive.google.com/file/d/10Ze1JUafZUZb8vZVjcOKpjK7MF-Q9OL3/view?usp=sharing) (Google Drive, ND users)
+- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/1duVhsQ-jf6MZpMi0hyc8o4nSG61TJpI0?usp=sharing) (Google Colab, ND users)
 
 ## How to submit this lab (and show your work)
 
@@ -667,11 +669,11 @@ What gets submitted as the lab notebook is the `Lab_Notebook_Walden.py` file.
 
 # Lab Notebook Questions
 
-[Click here](https://replit.com/team/eoc-f22/Functions-in-Python) to make a copy of the Replit template for this lab.
+[Click here](https://replit.com/team/eoc-f22/Iteration-and-Loops-in-Python) to make a copy of the Replit template for this lab.
 
 Alternatives:
-- [`.py` template](https://drive.google.com/file/d/1nn0IVlZRSe6oXmhnh5nqNCAKKPQi5t5j/view?usp=sharing) (Google Drive, ND users)
-- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/1EltssZ7B1PKv8FBQM55yc7AeyDyEi3Ma?usp=sharing) (Google Colab, ND users)
+- [`.py` template](https://drive.google.com/file/d/10Ze1JUafZUZb8vZVjcOKpjK7MF-Q9OL3/view?usp=sharing) (Google Drive, ND users)
+- [Jupyter Notebook, `.ipynb`](https://colab.research.google.com/drive/1duVhsQ-jf6MZpMi0hyc8o4nSG61TJpI0?usp=sharing) (Google Colab, ND users)
 
 Q1: Given the following program:
 
