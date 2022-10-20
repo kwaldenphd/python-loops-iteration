@@ -293,7 +293,6 @@ for i in dataset:
 
 In this syntax, `dataset` stands for the group of items we want Python to iterate over. That group of items could be a list, a list variable, string, string variable, etc. 
 
-
 We've encountered a few `for` loops in previous labs.
 
 Iterating over items in a list:
@@ -328,6 +327,9 @@ A previous lab notebook question asked you to print out each sublist (in a neste
 An approach to that program that doesn't use iteration or a `for` loop:
 
 ```Python
+# create list with sublists
+numbers = [[0, 1], [2, 3], [4, 5]]
+
 # print out each sublist
 print(numbers[0])
 print(numbers[1])
@@ -467,11 +469,6 @@ For more information on Python's `range()` function:
 ## `enumerate()`
 
 In a previous lab, we talked about how each item in a list has an index, or a number that indicates its position in the list. We can use the `enumerate()` function to generate a list of pairs containing each item in the list and its index.
-
-```Python
-# create list using enumerate
-list(enumerate(['a','b','c'])
-```
 
 We can use the `enumerate()` function as part of a `for` loop.
 
