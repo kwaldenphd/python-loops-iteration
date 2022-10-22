@@ -9,6 +9,13 @@ This lab provides an overview of foundational programming concepts in the areas 
 - Event-controlled and count-controlled loops
 - Looping structures in Python (`for` and `while`)
 
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=8759844b-e5a0-4fa3-98cf-af360142d72b">Lecture/live coding playlist</a></td>
+  </tr>
+  </table>
+
 ## Acknowledgements
 
 When building this lab, the author consulted materials developed by:
@@ -26,6 +33,7 @@ Definitions and explanations in this lab are adapted from Kenneth Leroy Busbee a
 - [Chapter V, Loops](https://press.rebus.community/programmingfundamentals/part/loops/)
 
 # Table of Contents
+- [Lecture & Live Coding](#lecture--live-coding)
 - [Key Concepts](#key-concepts)
 - [Lab Notebook Template](#lab-notebook-template)
 - [Overview](#overview)
@@ -44,6 +52,23 @@ Definitions and explanations in this lab are adapted from Kenneth Leroy Busbee a
 - [Lab Notebook Questions](#lab-notebook-questions)
 
 [Click here](https://colab.research.google.com/drive/1vyAHwOf76_byT1CY8ofFwBg67h3Sljuh?usp=sharing) to access this lab procedure as a Jupyter Notebook (Google CoLab, ND users)
+
+# Lecture & Live Coding
+
+Throughout this lab, you will see a Panopto icon at the start of select sections.
+
+This icon indicates there is lecture/live coding asynchronous content that accompanies this section of the lab. 
+
+You can click the link in the figure caption to access these materials (ND users only).
+
+Example:
+
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?pid=8759844b-e5a0-4fa3-98cf-af360142d72b">Lecture/live coding playlist</a></td>
+  </tr>
+  </table>
 
 # Key Concepts
 
@@ -171,6 +196,13 @@ Let's break down each type.
 
 ### Event-Controlled Loops
 
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f8df7787-9bff-4802-9f57-af36014148bd">While Loops in Python</a></td>
+  </tr>
+  </table>
+
 <p align="center"><img src="https://github.com/kwaldenphd/python-loops-iteration/blob/main/images/while-loop-diagram.png?raw=true" width="500"></p>
 
 In Python, event-controlled loops are written using a `while` statement and are called `while loop`. A `while` statement tests for an initial condition, and the lines of code indented under `while` run only when the initial condition is `True`.
@@ -264,6 +296,13 @@ IS FUN!
 ```
 
 ### Count-Controlled Loops in Python
+
+<table>
+ <tr><td>
+<img src="https://elearn.southampton.ac.uk/wp-content/blogs.dir/sites/64/2021/04/PanPan.png" alt="Panopto logo" width="50"/></td>
+<td><a href="https://notredame.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=decd0417-c579-4ee2-9ed3-af360140fa70">For Loops in Python</a></td>
+  </tr>
+  </table>
 
 <p align="center"><img src="https://github.com/kwaldenphd/python-loops-iteration/blob/main/images/for-loop-diagram.png?raw=true" width="500"></p>
 
